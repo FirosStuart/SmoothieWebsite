@@ -130,6 +130,16 @@ body {
     vertical-align: middle;
 }
 
+.shop__area {
+    margin: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
 .footer {
     left: 0;
     width: 100%;
