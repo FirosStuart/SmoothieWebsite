@@ -32,6 +32,7 @@ body {
     position: fixed;
     z-index: 10;
 }
+/* ずれています */
 
 .menu__box {
     list-style: none;
@@ -213,6 +214,8 @@ body {
 }
 .concept__first{
     color: #FF8000;
+    display: flex;
+    flex-direction: column;
     font-size: 5vw;
 }
 .concept__second{
@@ -244,7 +247,7 @@ body {
 .shop__img img {
     width: 100%;
 }
-
+/* center align */
 .shop__overview {
     width: 40%;
     padding: 0 0 0 60px;
