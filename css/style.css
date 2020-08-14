@@ -12,6 +12,11 @@
     src: url("/fonts/BritannicBQ-Bold.otf") format("opentype");
 }
 
+@font-face{
+    font-family: "MPLUS1p-Bold";
+    src:url("/fonts/MPLUS1p-Bold.ttf") format("truetype")
+}
+
 html,
 body {
     font-family: "RoBrushStd-UB";
@@ -20,22 +25,22 @@ body {
 
 
 .menu__bar {
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 60px;
-    background: #8BC24C 0% 0% no-repeat padding-box;
+    height: 80px;
+    background: #8BC24C;
     opacity: 0.67;
     position: fixed;
+    z-index: 10;
 }
 
 .menu__box {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin:0;
     display: flex;
     justify-content: center;
-    font-size: medium;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .menu__list {
@@ -43,35 +48,21 @@ body {
     text-align: center;
     font-family: "RoBrushStd-UB";
     color: #333333;
-    padding: 0;
+    font-size:22px;
 }
 
 .menu__list--Japanese {
-    font-size: smaller;
+    font-size: 16px;
 }
-
-
-/*
-.title {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: url("/images/title@2x.png");
-    background-size: 100%;
-    vertical-align: middle;
-}
-*/
 
 .title__img {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 80px;
     vertical-align: middle;
 }
 
 .product__area {
     width: 100%;
-    height: 400px;
     margin: 0;
     background: #f8cb8f;
     display: flex;
@@ -86,7 +77,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 0;
+    margin: 1em;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -96,7 +87,7 @@ body {
 }
 
 .product__title {
-    font-size: 300%;
+    font-size: 5vw;
     font-family: "BritannicBQ-Bold";
     color: #F38200;
 }
@@ -105,12 +96,12 @@ body {
     width: 62%;
     height: 62%;
     border-width: 6px;
-    font-size: 180%;
+    font-size: 3vw;
     border-style: solid;
     border-color: black;
     font-family: "RoBrushStd-UB";
     color: #333333;
-    margin: 0;
+    margin: 1em;
     background-color: white;
     display: flex;
     align-items: center;
@@ -119,24 +110,135 @@ body {
     vertical-align: middle;
 }
 
+.point__area{
+    background: #e8f7f2;
+}
+
+.section__intro{
+    position: relative;
+    display: flex;
+    padding-top:7vh;
+    margin:auto;
+    justify-content: center;
+}
+.point__intro{
+    position: absolute;
+    transform: rotate(-25deg); 
+    font-size:5vw;
+    color:#F45E07;
+    top:5vh;
+    left:15vw;
+}
+.point__product--img{
+    width:50%;
+}
+.point__product--img img{
+    width: 100%;
+}
+
+.section__point{
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    width: auto;
+    height:auto;
+    min-height: 1400px;
+}
+.point__ukon{
+    position:absolute;
+    top: 5%;
+    left: 6%;
+}
+.point__ukon--img{
+    width: 25vw;
+}
+.point__ukon--img img{
+    width: 100%;
+}
+.point__ukon--text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+.point__ukon--textfont{
+    color : #FF4C00;
+    font-size: 3vw;
+}
+
+.point__mango{
+    position: absolute;
+    top: 10%;
+    left: 57%;
+}
+.point__mango--img{
+    width: 32vw;
+}
+.point__mango--img img{
+    width: 100%;
+}
+.point__mango--text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+.point__mango--textfont{
+    color : #FF9100;
+    font-size: 3vw;
+}
+
+.point__pistachio{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.point__pistachio--text{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+.point__pistachio--img{
+    width: 25vw;
+}
+.point__pistachio--img img{
+    width: 100%;
+}
+.point__pistachio--textfont{
+    color : #2da76a;
+    font-size: 3vw;
+}
+
+.section-concept{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.concept__first{
+    color: #FF8000;
+    font-size: 5vw;
+}
+.concept__second{
+    display: flex;
+    font-family: "MPLUS1p-Bold";
+    flex-direction: column;
+    font-size: 3vw;
+}
 .shop__area {
     margin: 0 3em;
 }
 
 .shop__title{
     padding: 1em 2em 0 1em;
-    font-size: 200%;
+    font-size: 3vw;
     color: #FF8000;
     width: 100%;
 }
 
 .shop__info {
-    padding: 2em;
+    padding: 1em 0 1em 0;
     display: flex;
 }
 
 .shop__img {
-    width: 50%;
+    width: 60vw;
 }
 
 .shop__img img {
@@ -145,93 +247,136 @@ body {
 
 .shop__overview {
     width: 40%;
-    padding: 0 60px;
+    padding: 0 0 0 60px;
 }
 
 .shop__overview--intro{
-    padding: 60px 60px;
-    font-size: 150%;
+    font-size: 2vw;
     text-align: left;
     font-family: "RoBrushStd-UB";
     color: #333333;
 }
 .shop__overview--title{
     text-align: center;
-    font-size: 250%;
+    font-size: 3vw;
     font-family: "RoBrushStd-UB";
     color: #FFA800;
 }
 
-/* .shop__area {
-    height: 60%;
-    flex-direction: row;
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-}
-
-.shop__title{
-    top :6%;
-    left : 5%;
-    bottom: auto;
-    text-align: center;
-    font-family: "RoBrushStd-UB";
-    color: #FF8000;
-    font-size: 200%;
-    opacity: 1;
-    position: absolute;
-    background-color:white;
-}
-.shop__img{
-    width: 50%;
-    top : 15%;
-    left:5%;
-    right: auto;
-    position: absolute;
-    vertical-align: middle;
-}
-.shop__info{
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-}
-.shop__info--title{
-    position: absolute;
-    top:6%;
-    left:65%;
-    text-align: center;
-    font-size: 250%;
-    font-family: "RoBrushStd-UB";
-    color: #FFA800;
-    opacity: 1;
-}
-.shop__info--intro{
-    position: absolute;
-    top:30%;
-    left:70%;
-    font-size: 150%;
-    width: 50%;
-    text-align: left;
-    font-family: "RoBrushStd-UB";
-    color: #333333;
-    opacity: 1;
-} */
 
 .footer {
-    left: 0;
     width: 100%;
     height: 100px;
     background: #8BC24C 0% 0% no-repeat padding-box;
     opacity: 0.67;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     display: flex;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 1400px){
+    .section__point{
+        min-height: 1100px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .section__point{
+        min-height: 900px;
+    }
+}
+/* tablet layout */
+@media only screen and (max-width: 768px) {
+
+    .menu__bar {
+        height: 60px;
+    }
+    .title__img {
+        margin-top: 60px;
+    }
+    .menu__list {
+        font-size:18px;
+    }
+    .menu__list--Japanese {
+        font-size: 12px;
+    }
+    .point__ukon{
+        position: static;
+
+    }
+    .point__mango{
+        position: static;
+    }
+    .point__pistachio{
+        position: static;
+
+    }
+    .section__point{
+        min-height: 600px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .point__ukon--img{
+        width: 45vw;
+    }
+    .point__mango--img{
+        width: 45vw;
+    }
+    .point__pistachio--img{
+        width: 45vw;
+    }
+    .footer {
+        height: 70px;
+        font-size:10px;
+    }
+}
+
+/* mobile layout */
+@media only screen and  (max-width: 576px) {
+    .menu__bar {
+        height: 40px;
+    }
+    .title__img {
+        margin-top: 40px;
+    }
+    .menu__list {
+        font-size:10px;
+    }
+    .menu__list--Japanese {
+        font-size: 8px;
+    }
+    .point__ukon{
+        position: static;
+    }
+    .point__mango{
+        position: static;
+    }
+    .point__pistachio{
+        position: static;
+
+    }
+    .section__point{
+        min-height: 600px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .point__ukon--img{
+        width: 45vw;
+    }
+    .point__mango--img{
+        width: 45vw;
+    }
+    .point__pistachio--img{
+        width: 45vw;
+    }
+    .footer {
+        height: 50px;
+        font-size:8px;
+    }
 }
