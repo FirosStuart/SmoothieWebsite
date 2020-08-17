@@ -5,41 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/blog.js"></script>
   </head>
 
   <body>
+    <div class="headShape">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown" />
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <ul class="nav__box">
+            <li class="nav__list">
+              <a href="#top" style="color: inherit; text-decoration: none;">
+                <div>HOME</div>
+              </a>
+            </li>
+            <li class="nav__list">
+              <a
+                href="#products"
+                style="color: inherit; text-decoration: none;"
+              >
+                <div>PRODUCTS</div>
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#points" style="color: inherit; text-decoration: none;">
+                <div>POINT</div>
+              </a>
+            </li>
+            <li class="nav__list">
+              <a
+                href="#concepts"
+                style="color: inherit; text-decoration: none;"
+              >
+                <div>CONCEPT</div>
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#shops" style="color: inherit; text-decoration: none;">
+                <div>SHOP</div>
+              </a>
+            </li>
+            <li class="nav__list">
+              <a href="#blogs" style="color: inherit; text-decoration: none;">
+                <div>BLOG</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="menu__bar">
       <ul class="menu__box">
         <li class="menu__list">
-          <div>HOME</div>
-          <div class="menu__list--Japanese">ホーム</div>
+          <a href="#top" style="color: inherit; text-decoration: none;">
+            <div>HOME</div>
+            <div class="menu__list--Japanese">ホーム</div>
+          </a>
         </li>
         <li class="menu__list">
-          <div>PRODUCTS</div>
-          <div class="menu__list--Japanese">商品情報</div>
+          <a href="#products" style="color: inherit; text-decoration: none;">
+            <div>PRODUCTS</div>
+            <div class="menu__list--Japanese">商品情報</div>
+          </a>
         </li>
         <li class="menu__list">
-          <div>POINT</div>
-          <div class="menu__list--Japanese">こだわり</div>
+          <a href="#points" style="color: inherit; text-decoration: none;">
+            <div>POINT</div>
+            <div class="menu__list--Japanese">こだわり</div>
+          </a>
         </li>
         <li class="menu__list">
-          <div>CONCEPT</div>
-          <div class="menu__list--Japanese">コンセプト</div>
+          <a href="#concepts" style="color: inherit; text-decoration: none;">
+            <div>CONCEPT</div>
+            <div class="menu__list--Japanese">コンセプト</div>
+          </a>
         </li>
         <li class="menu__list">
-          <div>SHOP</div>
-          <div class="menu__list--Japanese">店舗情報</div>
+          <a href="#shops" style="color: inherit; text-decoration: none;">
+            <div>SHOP</div>
+            <div class="menu__list--Japanese">店舗情報</div>
+          </a>
         </li>
         <li class="menu__list">
-          <div>BLOG</div>
-          <div class="menu__list--Japanese">ブログ</div>
+          <a href="blogs" style="color: inherit; text-decoration: none;">
+            <div>BLOG</div>
+            <div class="menu__list--Japanese">ブログ</div>
+          </a>
         </li>
       </ul>
     </div>
-    <div>
+    <div id="top" class="title">
       <img class="title__img" src="/images/title.png" />
     </div>
-    <div class="product__area">
+    <div id="products" class="product__area">
       <div class="product__box">
         <div class="product__title">
           TAIWAN MANGO LASSI
@@ -47,29 +108,28 @@
 
         <div class="product__content">
           <span>
-            　　古代インド由来、今台湾で大人気のスムージー系の飲み物！
+            古代インド由来、今台湾で大人気のスムージー系の飲み物！
           </span>
           <span>
-            　　体を冷やすラッシーに、ピスタチオとウコンを使用し、夏の食欲不振や体の疲れに奇効！
+            体を冷やすラッシーに、ピスタチオとウコンを使用し、夏の食欲不振や体の疲れに奇効！
           </span>
         </div>
       </div>
     </div>
 
-    <div class="point__area">
-
+    <div id="points" class="point__area">
       <div class="section__intro">
         <div class="point__intro">
           台湾から新上陸
         </div>
         <div class="point__product--img">
-          <img src="/images/product.png">
+          <img src="/images/product.png" />
         </div>
       </div>
 
       <div class="section__point">
         <div class="point__ukon">
-          <img class="point__ukon--img" src="/images/ukon.png">
+          <img class="point__ukon--img" src="/images/ukon.png" />
           <div class="point__ukon--text">
             <span class="point__ukon--textfont">ウコン</span>
             <span>抗癌物質があり、</span>
@@ -78,7 +138,7 @@
         </div>
 
         <div class="point__mango">
-          <img class="point__mango--img" src="/images/mangosummer.png">
+          <img class="point__mango--img" src="/images/mangosummer.png" />
           <div class="point__mango--text">
             <span class="point__mango--textfont">マンゴー</span>
             <span>たっぷりβ-カロテンやビタミンCなど、</span>
@@ -87,16 +147,15 @@
         </div>
 
         <div class="point__pistachio">
-          <img class="point__pistachio--img" src="/images/pistachio.png">
+          <img class="point__pistachio--img" src="/images/pistachio.png" />
           <div class="point__pistachio--text">
             <span class="point__pistachio--textfont">ピスタチオ</span>
             <span>疲れの解消に効果がある</span>
           </div>
         </div>
-
       </div>
 
-      <div class="section-concept">
+      <div id="concepts" class="section-concept">
         <div class="concept__first">
           <span>健康と共に</span>
           <span>涼しい夏を過ごしましょう</span>
@@ -106,9 +165,8 @@
           <span>この夏に、疲れたあなたを応援します！</span>
         </div>
       </div>
-
     </div>
-    <div class="shop__area">
+    <div id="shops" class="shop__area">
       <div class="shop__title">
         ちょっとしたリラックスの雰囲気で味わおうとしたら
       </div>
@@ -126,9 +184,21 @@
         </div>
       </div>
     </div>
+    <div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    <div id="blogs" class="blog_area">
+      <!-- <div class="blog_set">
+        <div class="blog__img">  
+          <img src="/images/blog1.png">
+        </div>
+        <div class="blog__title">
+            Start your new life
+        </div>
+      </div> -->
+    </div>
     <div class="footer">
       <span>Copyright (c) 2011 Four Seasons inc. </span>
-      <span>       All Rights Reserved.</span>
+      <span> All Rights Reserved.</span>
     </div>
   </body>
 </html>

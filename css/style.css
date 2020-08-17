@@ -12,17 +12,14 @@
     src: url("/fonts/BritannicBQ-Bold.otf") format("opentype");
 }
 
-@font-face{
+@font-face {
     font-family: "MPLUS1p-Bold";
-    src:url("/fonts/MPLUS1p-Bold.ttf") format("truetype")
+    src: url("/fonts/MPLUS1p-Bold.ttf") format("truetype")
 }
 
-html,
-body {
-    font-family: "RoBrushStd-UB";
+html, body {
     margin: 0;
 }
-
 
 .menu__bar {
     width: 100%;
@@ -32,12 +29,13 @@ body {
     position: fixed;
     z-index: 10;
 }
+
 /* ずれています */
 
 .menu__box {
     list-style: none;
     padding: 0;
-    margin:0;
+    margin: 0;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -49,11 +47,17 @@ body {
     text-align: center;
     font-family: "RoBrushStd-UB";
     color: #333333;
-    font-size:22px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
 }
 
 .menu__list--Japanese {
     font-size: 16px;
+}
+
+.title {
+    display: block;
 }
 
 .title__img {
@@ -111,126 +115,156 @@ body {
     vertical-align: middle;
 }
 
-.point__area{
+.point__area {
     background: #e8f7f2;
 }
 
-.section__intro{
+.section__intro {
     position: relative;
     display: flex;
-    padding-top:7vh;
-    margin:auto;
+    padding-top: 7vh;
+    margin: auto;
     justify-content: center;
 }
-.point__intro{
+
+.point__intro {
+    z-index: 2;
     position: absolute;
-    transform: rotate(-25deg); 
-    font-size:5vw;
-    color:#F45E07;
-    top:5vh;
-    left:15vw;
+    font-family: "RoBrushStd-UB";
+    transform: rotate(-25deg);
+    font-size: 5vw;
+    color: #F45E07;
+    top: 5vh;
+    left: 15vw;
 }
-.point__product--img{
-    width:50%;
+
+.point__product--img {
+    z-index: 0;
+    width: 50%;
 }
-.point__product--img img{
+
+.point__product--img img {
     width: 100%;
 }
 
-.section__point{
+.section__point {
     position: relative;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: auto;
-    height:auto;
+    height: auto;
     min-height: 1400px;
 }
-.point__ukon{
-    position:absolute;
+
+.point__ukon {
+    position: absolute;
     top: 5%;
     left: 6%;
 }
-.point__ukon--img{
+
+.point__ukon--img {
     width: 25vw;
 }
-.point__ukon--img img{
+
+.point__ukon--img img {
     width: 100%;
 }
-.point__ukon--text{
+
+.point__ukon--text {
     display: flex;
+    font-family: "RoBrushStd-UB";
     flex-direction: column;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
 }
-.point__ukon--textfont{
-    color : #FF4C00;
+
+.point__ukon--textfont {
+    color: #FF4C00;
     font-size: 3vw;
 }
 
-.point__mango{
+.point__mango {
     position: absolute;
+    font-family: "RoBrushStd-UB";
     top: 10%;
     left: 57%;
 }
-.point__mango--img{
+
+.point__mango--img {
     width: 32vw;
 }
-.point__mango--img img{
+
+.point__mango--img img {
     width: 100%;
 }
-.point__mango--text{
+
+.point__mango--text {
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
+    font-family: "RoBrushStd-UB";
+    font-size: 2.5vw;
 }
-.point__mango--textfont{
-    color : #FF9100;
+
+.point__mango--textfont {
+    color: #FF9100;
+    font-family: "RoBrushStd-UB";
     font-size: 3vw;
 }
 
-.point__pistachio{
+.point__pistachio {
     position: absolute;
     top: 50%;
     left: 20%;
 }
-.point__pistachio--text{
+
+.point__pistachio--text {
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
-}
-.point__pistachio--img{
-    width: 25vw;
-}
-.point__pistachio--img img{
-    width: 100%;
-}
-.point__pistachio--textfont{
-    color : #2da76a;
-    font-size: 3vw;
+    font-family: "RoBrushStd-UB";
+    font-size: 2.5vw;
 }
 
-.section-concept{
+.point__pistachio--img {
+    width: 25vw;
+}
+
+.point__pistachio--img img {
+    width: 100%;
+}
+
+.point__pistachio--textfont {
+    color: #2da76a;
+    font-size: 3vw;
+    font-family: "RoBrushStd-UB";
+}
+
+.section-concept {
     text-align: center;
     padding-bottom: 20px;
 }
-.concept__first{
+
+.concept__first {
     color: #FF8000;
+    font-family: "RoBrushStd-UB";
     display: flex;
     flex-direction: column;
     font-size: 5vw;
 }
-.concept__second{
+
+.concept__second {
     display: flex;
     font-family: "MPLUS1p-Bold";
     flex-direction: column;
     font-size: 3vw;
 }
+
 .shop__area {
     margin: 0 3em;
 }
 
-.shop__title{
-    padding: 1em 2em 0 1em;
+.shop__title {
+    /* padding: 1em 2em 0 1em; */
     font-size: 3vw;
+    font-family: "RoBrushStd-UB";
     color: #FF8000;
     width: 100%;
 }
@@ -247,32 +281,70 @@ body {
 .shop__img img {
     width: 100%;
 }
+
 /* center align */
+
 .shop__overview {
     width: 40%;
     padding: 0 0 0 60px;
 }
 
-.shop__overview--intro{
+.shop__overview--intro {
     font-size: 2vw;
     text-align: left;
     font-family: "RoBrushStd-UB";
     color: #333333;
 }
-.shop__overview--title{
+
+.shop__overview--title {
     text-align: center;
     font-size: 3vw;
     font-family: "RoBrushStd-UB";
     color: #FFA800;
 }
 
+.blog_area{
+    padding:0 0 0 2em;
+    display: flex;
+    flex-direction: row;
+    background-color: #d5e9be;
+    align-items: center;
+    vertical-align: middle;
+    text-align:center;
 
+}
+.blog__set{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-direction: column;
+    text-align:center;
+}
+.blog__img{
+    align-items: center;
+    vertical-align: middle;
+    text-align:center;
+    padding:0.7em 0 0 0;
+    width: 70%;
+}
+.blog__img img{
+    width: 100%;
+}
+.blog__title{
+    padding:0 0 0.7em 0;
+    align-items: center;
+    vertical-align: middle;
+    text-align:center;
+    font-family: "RoBrushStd-UB";
+    font-size:1.6vw;
+}
 .footer {
     width: 100%;
     height: 100px;
     background: #8BC24C 0% 0% no-repeat padding-box;
     opacity: 0.67;
     align-items: center;
+    font-family: "RoBrushStd-UB";
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -280,106 +352,277 @@ body {
     vertical-align: middle;
 }
 
-@media only screen and (max-width: 1400px){
-    .section__point{
+.headShape {
+    display: none;
+    z-index: 99;
+}
+
+#nav-drawer {
+    position: relative;
+    
+}
+
+/*チェックボックス等は非表示に*/
+
+.nav-unshown {
+    display: none;
+}
+
+/*アイコンのスペース*/
+
+#nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+
+#nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;
+    /*線の太さ*/
+    width: 25px;
+    /*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
+
+#nav-open span:before {
+    bottom: -8px;
+}
+
+#nav-open span:after {
+    bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+
+#nav-close {
+    display: none;
+    /*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    /*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+/*中身*/
+
+#nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:4em 0;
+    /*最前面に*/
+    width: 90%;
+    /*右側に隙間を作る*/
+    max-width: 140px;
+    /*最大幅*/
+    height: 100%;
+    background: black;
+    color: white;
+    z-index: 9999;
+    /*背景色*/
+    transition: .3s ease-in-out;
+    /*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+    /*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+
+#nav-input:checked~#nav-close {
+    display: block;
+    /*カバーを表示*/
+    opacity: .5;
+}
+
+#nav-input:checked~#nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    /*中身を表示*/
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 0px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(190, 190, 190); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0.5;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+@media only screen and (max-width: 1400px) {
+    .section__point {
         min-height: 1100px;
     }
 }
-@media only screen and (max-width: 1024px){
-    .section__point{
+
+@media only screen and (max-width: 1024px) {
+    .section__point {
         min-height: 900px;
     }
 }
-/* tablet layout */
-@media only screen and (max-width: 768px) {
 
+/* tablet layout */
+
+@media only screen and (max-width: 768px) {
     .menu__bar {
-        height: 60px;
+        display: none;
+    }
+    .headShape {
+        display: block;
+        position: fixed;
+        padding: 10px;
+        background-color: #8BC24C;
+        opacity: 0.67;
+    }
+    .title {
+        margin : 0;
+        vertical-align: top;
     }
     .title__img {
-        margin-top: 60px;
+        margin-top: 0px;
     }
-    .menu__list {
-        font-size:18px;
+    .nav__box {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
     }
-    .menu__list--Japanese {
-        font-size: 12px;
+    
+    .nav__list {
+        height: calc(100% / 6);
+        text-align: center;
+        vertical-align: middle;
+        font-family: "RoBrushStd-UB";
+        color: #333333;
+        color: inherit;
+        text-decoration: none;
+        font-size: 20px;
     }
-    .point__ukon{
+    .point__ukon {
         position: static;
-
     }
-    .point__mango{
+    .point__mango {
         position: static;
     }
-    .point__pistachio{
+    .point__pistachio {
         position: static;
-
     }
-    .section__point{
+    .section__point {
         min-height: 600px;
         position: static;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .point__ukon--img{
+    .point__ukon--img {
         width: 45vw;
     }
-    .point__mango--img{
+    .point__mango--img {
         width: 45vw;
     }
-    .point__pistachio--img{
+    .point__pistachio--img {
         width: 45vw;
+    }
+    .shop__title{
+        padding:1vh 0;
+        text-align:center;
+    }
+    .shop__info {
+        padding:0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .shop__overview {
+        padding:0;
+        text-align: center;
+        width: 100%;
+    }
+    .shop__overview--title{
+        font-size:3vh;
+    }
+    .shop__overview--intro{
+        font-size: 2vh;
+        text-align: center;
     }
     .footer {
         height: 70px;
-        font-size:10px;
+        font-size: 10px;
     }
 }
 
 /* mobile layout */
-@media only screen and  (max-width: 576px) {
+
+@media only screen and (max-width: 576px) {
     .menu__bar {
         height: 40px;
     }
-    .title__img {
-        margin-top: 40px;
-    }
     .menu__list {
-        font-size:10px;
+        font-size: 10px;
     }
     .menu__list--Japanese {
         font-size: 8px;
     }
-    .point__ukon{
+    .point__ukon {
         position: static;
     }
-    .point__mango{
+    .point__mango {
         position: static;
     }
-    .point__pistachio{
+    .point__pistachio {
         position: static;
-
     }
-    .section__point{
+    .section__point {
         min-height: 600px;
         position: static;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .point__ukon--img{
+    .point__ukon--img {
         width: 45vw;
     }
-    .point__mango--img{
+    .point__mango--img {
         width: 45vw;
     }
-    .point__pistachio--img{
+    .point__pistachio--img {
         width: 45vw;
     }
     .footer {
         height: 50px;
-        font-size:8px;
+        font-size: 8px;
     }
 }
