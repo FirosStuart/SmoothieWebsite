@@ -397,13 +397,13 @@ html, body {
     flex-direction: column;
 }
 
-.blogPage__Img img{
+.blogPage__Img img {
     width: 100%;
 }
 
 .blogPage__BodyTitle {
     height: 50px;
-    padding-left:1em;
+    padding-left: 1em;
     font-size: 2vw;
     text-align: left;
     background-color: #7B5544;
@@ -414,11 +414,13 @@ html, body {
     color: white;
     word-wrap: break-word;
 }
-.blogPage__Time{
+
+.blogPage__Time {
     padding: 1em 1em;
     font-size: 1.5vw;
     opacity: 0.6;
 }
+
 .blogPage__Txt {
     text-align: left;
     font: normal normal normal 30px/30px Microsoft YaHei;
@@ -430,10 +432,15 @@ html, body {
     word-wrap: break-word;
 }
 
-.container{
+.blogPage__Txt img {
+    width: 100%;
+}
+
+.container {
     margin: 0 auto;
     max-width: 900px;
 }
+
 .headShape {
     display: none;
     z-index: 99;
@@ -673,15 +680,15 @@ html, body {
         text-align: center;
     }
     .blogPage__Bar {
-        font-size:3vw;
+        font-size: 3vw;
     }
     .blogPage__BodyTitle {
         font-size: 3vw;
     }
-    .blogPage__Txt{
+    .blogPage__Txt {
         font-size: 2vw;
     }
-    .blogPage__Time{
+    .blogPage__Time {
         font-size: 2vw;
     }
     .blog__set {
@@ -694,7 +701,6 @@ html, body {
     .blog__title {
         font-size: 3.5vw;
     }
-    
     .footer {
         height: 70px;
         font-size: 10px;
@@ -739,15 +745,15 @@ html, body {
         width: 45vw;
     }
     .blogPage__Bar {
-        font-size:4vw;
+        font-size: 4vw;
     }
     .blogPage__BodyTitle {
         font-size: 4vw;
     }
-    .blogPage__Txt{
+    .blogPage__Txt {
         font-size: 3vw;
     }
-    .blogPage__Time{
+    .blogPage__Time {
         font-size: 3vw;
     }
     .footer {
