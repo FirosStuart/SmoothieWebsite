@@ -361,8 +361,8 @@ html, body {
 }
 
 .blogPage__home {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     font-size: 12px;
     background-color: #8BC24C;
@@ -370,7 +370,7 @@ html, body {
     border-radius: 50%;
     font-family: "RoBrushStd-UB";
     text-align: center;
-    line-height: 70px;
+    line-height: 50px;
     position: fixed;
     opacity: 0.4;
     top: 0;
