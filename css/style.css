@@ -1,6 +1,6 @@
 @font-face {
     font-family: "RoBrushStd-UB";
-    src: url("/fonts/RoBrushStd-UB.otf") format("opentype");
+    src: url("/fonts/RBrushLight.woff") format("woff");
     /*
     font-family: "BritannicBQ-Bold";
     src: url("/fonts/BritannicBQ-Bold.otf") format("opentype");
@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: "BritannicBQ-Bold";
-    src: url("/fonts/BritannicBQ-Bold.otf") format("opentype");
+    src: url("/fonts/BritannicBQ-Bold.woff") format("woff");
 }
 
 @font-face {
     font-family: "MPLUS1p-Bold";
-    src: url("/fonts/MPLUS1p-Bold.ttf") format("truetype")
+    src: url("/fonts/MPLUS1p-Bold.woff") format("woff")
 }
 
 html, body {
@@ -360,16 +360,16 @@ html, body {
 }
 
 .blogPage__home {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    font-size: 1.5vw;
+    font-size: 12px;
     background-color: #8BC24C;
     display: inline-block;
     border-radius: 50%;
     font-family: "RoBrushStd-UB";
     text-align: center;
-    line-height: 50px;
+    line-height: 70px;
     position: fixed;
     opacity: 0.4;
     top: 0;
@@ -681,6 +681,7 @@ html, body {
     .blogPage__Time{
         font-size: 2vw;
     }
+
     .footer {
         height: 70px;
         font-size: 10px;
