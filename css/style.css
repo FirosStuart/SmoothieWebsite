@@ -303,41 +303,48 @@ html, body {
     color: #FFA800;
 }
 
-.blog_area{
-    padding:0 0 0 2em;
+.blog__area {
     display: flex;
     flex-direction: row;
     background-color: #d5e9be;
     align-items: center;
     vertical-align: middle;
-    text-align:center;
-
+    text-align: center;
 }
-.blog__set{
+
+.blog__set {
     display: flex;
     align-items: center;
     vertical-align: middle;
     flex-direction: column;
-    text-align:center;
+    text-align: center;
+    width: 50%;
 }
-.blog__img{
+
+.blog__img {
     align-items: center;
     vertical-align: middle;
-    text-align:center;
-    padding:0.7em 0 0 0;
+    text-align: center;
+    padding: 0.7em 0 0 0;
     width: 70%;
 }
-.blog__img img{
+
+.blog__img img {
     width: 100%;
+    object-fit: cover;
+    width: 25vw;
+    height: 15vw;
 }
-.blog__title{
-    padding:0 0 0.7em 0;
+
+.blog__title {
+    padding: 0 0 0.7em 0;
     align-items: center;
     vertical-align: middle;
-    text-align:center;
+    text-align: center;
     font-family: "RoBrushStd-UB";
-    font-size:1.6vw;
+    font-size: 1.6vw;
 }
+
 .footer {
     width: 100%;
     height: 100px;
@@ -352,6 +359,78 @@ html, body {
     vertical-align: middle;
 }
 
+.blogPage__home {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5vw;
+    background-color: #8BC24C;
+    display: inline-block;
+    border-radius: 50%;
+    font-family: "RoBrushStd-UB";
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+.blogPage__Bar {
+    margin-bottom: 0.5em;
+    height: 50px;
+    font-size: 3vw;
+    text-align: center;
+    display: flex;
+    background-color: #7B5544;
+    font-family: "RoBrushStd-UB";
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    justify-content: center;
+}
+
+.blogPage__Area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogPage__Img img{
+    width: 100%;
+}
+
+.blogPage__BodyTitle {
+    height: 50px;
+    font-size: 2vw;
+    text-align: left;
+    background-color: #7B5544;
+    display: flex;
+    font-family: "RoBrushStd-UB";
+    align-items: center;
+    vertical-align: middle;
+    color: white;
+    word-wrap: break-word;
+}
+.blogPage__Time{
+    padding: 1em 0;
+    font-size: 1.5vw;
+    opacity: 0.6;
+}
+.blogPage__Txt {
+    text-align: left;
+    font: normal normal normal 30px/30px Microsoft YaHei;
+    letter-spacing: 0px;
+    font-size: 2vw;
+    color: #1A1311;
+    opacity: 1;
+    word-wrap: break-word;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 500px;
+}
 .headShape {
     display: none;
     z-index: 99;
@@ -359,7 +438,6 @@ html, body {
 
 #nav-drawer {
     position: relative;
-    
 }
 
 /*チェックボックス等は非表示に*/
@@ -424,7 +502,7 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    padding:4em 0;
+    padding: 4em 0;
     /*最前面に*/
     width: 90%;
     /*右側に隙間を作る*/
@@ -457,26 +535,40 @@ html, body {
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
 }
 
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 0px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(190, 190, 190); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+.myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 0px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(190, 190, 190);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 10px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
     opacity: 0.5;
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
 
 @media only screen and (max-width: 1400px) {
     .section__point {
@@ -504,7 +596,7 @@ html, body {
         opacity: 0.67;
     }
     .title {
-        margin : 0;
+        margin: 0;
         vertical-align: top;
     }
     .title__img {
@@ -520,7 +612,6 @@ html, body {
         text-align: center;
         vertical-align: middle;
     }
-    
     .nav__list {
         height: calc(100% / 6);
         text-align: center;
@@ -556,27 +647,39 @@ html, body {
     .point__pistachio--img {
         width: 45vw;
     }
-    .shop__title{
-        padding:1vh 0;
-        text-align:center;
+    .shop__title {
+        padding: 1vh 0;
+        text-align: center;
     }
     .shop__info {
-        padding:0;
+        padding: 0;
         align-items: center;
         display: flex;
         flex-direction: column;
     }
     .shop__overview {
-        padding:0;
+        padding: 0;
         text-align: center;
         width: 100%;
     }
-    .shop__overview--title{
-        font-size:3vh;
+    .shop__overview--title {
+        font-size: 3vh;
     }
-    .shop__overview--intro{
+    .shop__overview--intro {
         font-size: 2vh;
         text-align: center;
+    }
+    .blogPage__Bar {
+        font-size:3vw;
+    }
+    .blogPage__BodyTitle {
+        font-size: 3vw;
+    }
+    .blogPage__Txt{
+        font-size: 2vw;
+    }
+    .blogPage__Time{
+        font-size: 2vw;
     }
     .footer {
         height: 70px;
@@ -620,6 +723,18 @@ html, body {
     }
     .point__pistachio--img {
         width: 45vw;
+    }
+    .blogPage__Bar {
+        font-size:4vw;
+    }
+    .blogPage__BodyTitle {
+        font-size: 4vw;
+    }
+    .blogPage__Txt{
+        font-size: 3vw;
+    }
+    .blogPage__Time{
+        font-size: 3vw;
     }
     .footer {
         height: 50px;
