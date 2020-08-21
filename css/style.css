@@ -213,7 +213,7 @@ html, body {
 
 .point__pistachio {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 20%;
 }
 
@@ -225,7 +225,7 @@ html, body {
 }
 
 .point__pistachio--img {
-    width: 25vw;
+    width: 20vw;
 }
 
 .point__pistachio--img img {
