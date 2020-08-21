@@ -1,8 +1,4 @@
-fetch("https://mangolassi.microcms.io/api/v1/blogs/", {
-  headers: {
-    "X-API-KEY": "cc46cc4e-41a6-40e8-8e3f-7ac3488624dc",
-  },
-})
+fetch("https://somme.azurewebsites.net/api/HttpTrigger1?code=keyCMS", {})
   .then((res) => res.json())
   .then((json) => {
     const blogArea = document.getElementById("blog_main");
