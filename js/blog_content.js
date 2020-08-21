@@ -1,11 +1,7 @@
 let id = new URLSearchParams(location.search).get("id");
 
 //microCMSからコンテンツを取得
-fetch(`https://mangolassi.microcms.io/api/v1/blogs/${id}`, {
-  headers: {
-    "X-API-KEY": "cc46cc4e-41a6-40e8-8e3f-7ac3488624dc",
-  },
-})
+fetch(`https://somme.azurewebsites.net/api/HttpTrigger2?code=keyCMS&id=${id}`, {})
   .then((result) => result.json())
   .then((json) => {
     //画面表示
